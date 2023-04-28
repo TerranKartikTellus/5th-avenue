@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import { useState } from 'react';
 
-
+import Headd from '@/components/head';
 export default function Home() {
   
   const [modal, setModel] = useState(false);
@@ -10,6 +10,7 @@ export default function Home() {
     <main
       className={`bg-gray-100 flex flex-col p-10 items-center justify-center text-gray-900 pt-  min-h-screen `}
     >
+      <Headd title="Home | 5th Avenue"></Headd>
       { modal && <Modal toggle={toggle} text={'Thank you for your interest in our company!'}></Modal>}
      <div className="font-light text-5xl  ">Welcome to New York 5th Avenue</div>
      <div className="my-6  ">Iconic architecture in the heart of the city</div>
